@@ -10,27 +10,53 @@ import XCTest
 
 final class Test17_RefreshControllTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_refreshControl(){
+        let sut = ViewController()
+        
+        sut.loadViewIfNeeded()
+        sut.replaceRefreshControlWithFakeForiOS17Support()
+        XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
+        
+        sut.beginAppearanceTransition(true, animated: false)
+        sut.endAppearanceTransition() 
+        XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
+
+        sut.refreshControl?.endRefreshing()
+        sut.refreshControl?.sendActions(for: .valueChanged)
+        XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
+        
+        sut.refreshControl?.endRefreshing()
+        sut.beginAppearanceTransition(true, animated: false)
+        sut.endAppearanceTransition()
+        XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
+
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+}
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+private extension ViewController{
+    func replaceRefreshControlWithFakeForiOS17Support(){
+        let fake = FakeRefreshControl()
+        refreshControl = fake
+        
+        refreshControl?.allTargets.forEach{ target in
+            refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach{ action in
+                fake.addTarget(target, action: Selector(action), for: .valueChanged)
+            }
         }
     }
+}
 
+private class FakeRefreshControl: UIRefreshControl{
+    private var _isRefreshing = false
+    
+    override var isRefreshing: Bool {return _isRefreshing}
+    
+    override func beginRefreshing() {
+        _isRefreshing = true
+    }
+    
+    override func endRefreshing() {
+        _isRefreshing = false
+    }
 }

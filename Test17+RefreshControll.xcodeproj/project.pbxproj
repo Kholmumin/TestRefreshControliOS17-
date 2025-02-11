@@ -14,19 +14,11 @@
 			remoteGlobalIDString = EB9A6D6B2D5B527E003D1396;
 			remoteInfo = "Test17+RefreshControll";
 		};
-		EB9A6D8D2D5B5281003D1396 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EB9A6D642D5B527E003D1396 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = EB9A6D6B2D5B527E003D1396;
-			remoteInfo = "Test17+RefreshControll";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		EB9A6D6C2D5B527E003D1396 /* Test17+RefreshControll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test17+RefreshControll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9A6D822D5B5281003D1396 /* Test17+RefreshControllTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test17+RefreshControllTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EB9A6D8C2D5B5281003D1396 /* Test17+RefreshControllUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Test17+RefreshControllUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -53,11 +45,6 @@
 			path = "Test17+RefreshControllTests";
 			sourceTree = "<group>";
 		};
-		EB9A6D8F2D5B5281003D1396 /* Test17+RefreshControllUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Test17+RefreshControllUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,13 +62,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB9A6D892D5B5281003D1396 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,7 +70,6 @@
 			children = (
 				EB9A6D6E2D5B527E003D1396 /* Test17+RefreshControll */,
 				EB9A6D852D5B5281003D1396 /* Test17+RefreshControllTests */,
-				EB9A6D8F2D5B5281003D1396 /* Test17+RefreshControllUITests */,
 				EB9A6D6D2D5B527E003D1396 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +79,6 @@
 			children = (
 				EB9A6D6C2D5B527E003D1396 /* Test17+RefreshControll.app */,
 				EB9A6D822D5B5281003D1396 /* Test17+RefreshControllTests.xctest */,
-				EB9A6D8C2D5B5281003D1396 /* Test17+RefreshControllUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,29 +131,6 @@
 			productReference = EB9A6D822D5B5281003D1396 /* Test17+RefreshControllTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		EB9A6D8B2D5B5281003D1396 /* Test17+RefreshControllUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EB9A6D9D2D5B5281003D1396 /* Build configuration list for PBXNativeTarget "Test17+RefreshControllUITests" */;
-			buildPhases = (
-				EB9A6D882D5B5281003D1396 /* Sources */,
-				EB9A6D892D5B5281003D1396 /* Frameworks */,
-				EB9A6D8A2D5B5281003D1396 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				EB9A6D8E2D5B5281003D1396 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				EB9A6D8F2D5B5281003D1396 /* Test17+RefreshControllUITests */,
-			);
-			name = "Test17+RefreshControllUITests";
-			packageProductDependencies = (
-			);
-			productName = "Test17+RefreshControllUITests";
-			productReference = EB9A6D8C2D5B5281003D1396 /* Test17+RefreshControllUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,10 +145,6 @@
 						CreatedOnToolsVersion = 16.2;
 					};
 					EB9A6D812D5B5281003D1396 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = EB9A6D6B2D5B527E003D1396;
-					};
-					EB9A6D8B2D5B5281003D1396 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = EB9A6D6B2D5B527E003D1396;
 					};
@@ -215,7 +166,6 @@
 			targets = (
 				EB9A6D6B2D5B527E003D1396 /* Test17+RefreshControll */,
 				EB9A6D812D5B5281003D1396 /* Test17+RefreshControllTests */,
-				EB9A6D8B2D5B5281003D1396 /* Test17+RefreshControllUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,13 +179,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		EB9A6D802D5B5281003D1396 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB9A6D8A2D5B5281003D1396 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,13 +202,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EB9A6D882D5B5281003D1396 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -273,11 +209,6 @@
 			isa = PBXTargetDependency;
 			target = EB9A6D6B2D5B527E003D1396 /* Test17+RefreshControll */;
 			targetProxy = EB9A6D832D5B5281003D1396 /* PBXContainerItemProxy */;
-		};
-		EB9A6D8E2D5B5281003D1396 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = EB9A6D6B2D5B527E003D1396 /* Test17+RefreshControll */;
-			targetProxy = EB9A6D8D2D5B5281003D1396 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -295,8 +226,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,8 +255,9 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +398,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36SDLWJ4SM;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kh.Test17-RefreshControllTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -484,7 +417,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 36SDLWJ4SM;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.kh.Test17-RefreshControllTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -492,40 +425,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test17+RefreshControll.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test17+RefreshControll";
-			};
-			name = Release;
-		};
-		EB9A6D9E2D5B5281003D1396 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 36SDLWJ4SM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kh.Test17-RefreshControllUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Test17+RefreshControll";
-			};
-			name = Debug;
-		};
-		EB9A6D9F2D5B5281003D1396 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 36SDLWJ4SM;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.kh.Test17-RefreshControllUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Test17+RefreshControll";
 			};
 			name = Release;
 		};
@@ -555,15 +454,6 @@
 			buildConfigurations = (
 				EB9A6D9B2D5B5281003D1396 /* Debug */,
 				EB9A6D9C2D5B5281003D1396 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EB9A6D9D2D5B5281003D1396 /* Build configuration list for PBXNativeTarget "Test17+RefreshControllUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EB9A6D9E2D5B5281003D1396 /* Debug */,
-				EB9A6D9F2D5B5281003D1396 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

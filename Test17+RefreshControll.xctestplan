@@ -1,0 +1,37 @@
+{
+  "configurations" : [
+    {
+      "id" : "6D8C59F5-A6CC-4BE7-82B3-2B8608BC09C3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Test17+RefreshControll.xcodeproj",
+      "identifier" : "EB9A6D6B2D5B527E003D1396",
+      "name" : "Test17+RefreshControll"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Test17+RefreshControll.xcodeproj",
+        "identifier" : "EB9A6D812D5B5281003D1396",
+        "name" : "Test17+RefreshControllTests"
+      }
+    },
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:Test17+RefreshControll.xcodeproj",
+        "identifier" : "EB9A6D8B2D5B5281003D1396",
+        "name" : "Test17+RefreshControllUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
