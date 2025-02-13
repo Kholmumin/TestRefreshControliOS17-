@@ -13,37 +13,42 @@ final class Test17_RefreshControllTests: XCTestCase {
     func test_refreshControl(){
         let sut = ViewController()
         
-        sut.loadViewIfNeeded()
-        sut.replaceRefreshControlWithFakeForiOS17Support()
-        XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
-        
-        sut.beginAppearanceTransition(true, animated: false)
-        sut.endAppearanceTransition() 
+        sut.simulateAppearance()
         XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
-
+        
         sut.refreshControl?.endRefreshing()
         sut.refreshControl?.sendActions(for: .valueChanged)
         XCTAssertEqual(sut.refreshControl?.isRefreshing, true)
         
         sut.refreshControl?.endRefreshing()
-        sut.beginAppearanceTransition(true, animated: false)
-        sut.endAppearanceTransition()
+        sut.simulateAppearance()
         XCTAssertEqual(sut.refreshControl?.isRefreshing, false)
+
 
     }
 
 }
 
 private extension ViewController{
+    func simulateAppearance(){
+        if !isViewLoaded{
+            loadViewIfNeeded()
+            replaceRefreshControlWithFakeForiOS17Support()
+        }
+        beginAppearanceTransition(true, animated: false)
+        endAppearanceTransition()
+    }
+    
     func replaceRefreshControlWithFakeForiOS17Support(){
         let fake = FakeRefreshControl()
-        refreshControl = fake
         
         refreshControl?.allTargets.forEach{ target in
             refreshControl?.actions(forTarget: target, forControlEvent: .valueChanged)?.forEach{ action in
                 fake.addTarget(target, action: Selector(action), for: .valueChanged)
             }
         }
+        
+        refreshControl = fake
     }
 }
 
